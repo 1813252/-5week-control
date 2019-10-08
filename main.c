@@ -6,11 +6,22 @@
 int main(int argc, char *argv[]) {
 
 
-	int i=0;
-	for (i-0; i<10;i++)
-	printf("hello world\n");
+	int number=0;
+	char c;
 	
-	
+	printf("input a string\n");
 
-	return 0;
+	while ((c=getchar())!='\n')
+
+
+{
+	if ('0'<=c&& c<='9')
+	number++;
+}
+
+
+printf("the number of digits=%d",number);
+
+
+return 0;
 }
